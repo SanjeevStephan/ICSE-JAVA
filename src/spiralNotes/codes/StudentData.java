@@ -1,5 +1,11 @@
 package spiralNotes.codes;
 
+/**
+ * Real-Life Example Code-#3
+ * File Name : StudentData.java
+ * Class Name : StudentData
+ * Description : Here's a real-life based example to stores different data about a college or school student's data :
+ */
 public class StudentData {
     public static void main(String[] args) {
         // Student Data
