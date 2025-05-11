@@ -17,6 +17,6 @@ public class StudentData {
         System.out.println("Student Age : " + studentAge);
         System.out.println("Student Height : " + studentHeightInFt);
         System.out.println("Student Gender : " + studentGender);
-        
+
     }
 }
