@@ -10,13 +10,13 @@ import java.util.Scanner;
 
 public class EligibleVoter {
 
-    // Create a checkAge() method with an integer variable called age
+    // Create a checkAge() method with an integer parameter titled "age"
     public static void checkAge(int age) {
         // If age is less than 18, print "Access Denied"
         if (age < 18) {
             System.out.println("Sorry! You are not old enough to be a voter");
 
-            int differenceInYear = 18 - age;
+//            int differenceInYear = 18 - age;
 
         }
         else {
