@@ -1,10 +1,8 @@
-/*                              DisplayGST.java
+/*                              AreaOfSquare.java
     Program No : 03
     Date :
-    Program Title :
-    Program Description : A dealer allows his customer two successive discounts of 20% and 10%
-                          If the article costs Rs 7,200, calculate and display the selling price and
-                          the total discount given by the dealer.
+    Program Title : AreaOfSquare
+    Program Description : A Program in Java to find the Area, Perimeter and Diagonal of a Square.
     Note : below method is executed from public static void main(String[] args){..} method only
  */
 package project.ix.chapter4;
@@ -24,7 +22,7 @@ public class AreaOfSquare {
         System.out.println("The Perimeter of Square : " + perimeter);
         System.out.println("The Diagonal of Square : " + diagonal);
     }
-    // public static method() can be accessed outside the class
+    // public static method() can be accessed from outside the class
     public static void displaySquareArea(){
         calculateSquare(25);
     }

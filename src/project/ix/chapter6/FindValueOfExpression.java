@@ -1,7 +1,7 @@
 /*                              DisplayGST.java
-    Program No : 09
+    Program No : 10
     Date :
-    Program Title :
+    Program Title : FindValueOfExpression
     Program Description : A Program to find value of an expression.
     Note : below method is executed from public static void main(String[] args){..} method only
  */
@@ -15,18 +15,21 @@ public class FindValueOfExpression {
         Scanner input = new Scanner(System.in);
         int a, b , c;
         double d;
-        System.out.print("[?] Enter Value of a :  ");
+        System.out.print("[?] Enter Value for a : ");
         a = input.nextInt();
-        System.out.print("[?] Enter Value of b : ");
+        System.out.print("[?] Enter Value for b : ");
         b = input.nextInt();
-        System.out.print("[?] Enter Value of b : ");
+        System.out.print("[?] Enter Value for c : ");
         c = input.nextInt();
-        d = 1 / Math.pow(a, 2) + 1 / Math.pow(b, 3) + 1 / Math.pow(c, 4);
-        System.out.print("Value of the Expression : " + d);
+        double firstExpression = 1 / Math.pow(a, 2);
+        double secondExpression = 1 / Math.pow(b, 3);
+        double thirdExpression = 1 / Math.pow(c, 4);
+        d = firstExpression + secondExpression + thirdExpression;
+        System.out.printf("Value of the Expression : %.3f\n", d);
     }
-    public static void main(String[] args) {
-        findExpression();
-    }
+//    public static void main(String[] args) {
+//        findExpression();
+//    }
 }
 
 

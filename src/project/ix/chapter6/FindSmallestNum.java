@@ -1,19 +1,21 @@
 /*                              DisplayGST.java
     Program No : 07
     Date :
-    Program Title :
-    Program Description : Write a Program In Java to input three numbers and display the smallest number
+    Program Title : FindSmallestNum
+    Program Description : A Program In Java to pass three numbers as parameters inside method and display the smallest number
     Note : below method is executed from public static void main(String[] args){..} method only
  */
 package project.ix.chapter6;
 
 public class FindSmallestNum {
-    public static void displaySmallestNum(int a, int b, int c)
+    public static void findSmallestNum(int a, int b, int c)
     {
-        int d, z ;
-        d = Math.min(a, b); // Math.min() method gives us the smallest num
-        z = Math.min(c, d);
-        System.out.println("Smallest Number = " + z);
+        // Math.min() method returns the minimum number
+        int d = Math.min(a, b);
+        int smallestNum = Math.min(c, d);
+        String txt = "Smallest Number between (" ;
+        String nums = "a=" + a + ", b=" + b + ", c=" + c;
+        System.out.println(txt + nums + ") is : " + smallestNum);
     }
 
 }

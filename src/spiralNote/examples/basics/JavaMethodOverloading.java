@@ -11,14 +11,13 @@ public class JavaMethodOverloading {
     }
     static String plusMethod(String a, String b)
     {
-        String space = "";
-        return a + space + b;
+        return a + b;
     }
 
     public static void main(String[] args)
     {
         int myNum1 = plusMethod(4, 8);
-        double myNum2 = plusMethod(12, 18);
+        double myNum2 = plusMethod(12.6, 18.5);
         String myNum3 = plusMethod("9", "8");
 
         System.out.println("int : " + myNum1);

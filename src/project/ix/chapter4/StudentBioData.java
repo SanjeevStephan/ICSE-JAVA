@@ -1,8 +1,7 @@
 /*                              StudentBioData.java
     Program No : 01
-    Date :
     Program Title : StudentBioData
-    Program Description : Write a program in Java to assign and display Name, Class, Rollno, Subject, School and
+    Program Description : Program in Java to assign and display Name, Class, Rollno, Subject, School and
     City of a Student.
     Note : below method is executed from public static void main(String[] args){..} method only
  */

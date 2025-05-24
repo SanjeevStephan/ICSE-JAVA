@@ -1,20 +1,25 @@
-/*                              DisplayGST.java
+/*                              CalculateGST.java
     Program No : 04
-    Date :
-    Program Title : DisplayGST
-    Program Description : A Shopkeeper sells an article for Rs 10,000. If the rate of tax under GST is 10%,
-                          Calculate and display the tax and the amount paid by the customer.
+    Program Title : CalculateGST
+    Program Description : A Program to Calculate Goods and Services Tax (GST)
     Note : below method is executed from public static void main(String[] args){..} method only
+    ---------------------------
+    The Basic formula for GST calculation is :
+    GST Amount = (Original Price x GST Rate) / 100
+    Final Price = Original Price + GST Amount
  */
 package project.ix.chapter4;
 
 public class CalculateGST {
+    public static void calculateGST( int originalPrice) {
+        double gstRate = 10.0 , gstAmount, finalAmount;
+        gstAmount = originalPrice * gstRate / 100.0;
+        finalAmount = originalPrice + gstAmount;
+        System.out.println("GST = " + gstAmount);
+        String txt = "Amount to Pay (including GST) =" ;
+        System.out.println(txt + finalAmount);
+    }
     public static void displayGST() {
-        int pr = 10000;
-        double gst, amount;
-        gst = pr * 10.0 / 100.0;
-        amount = pr + gst;
-        System.out.println("GST = " + gst);
-        System.out.println("Amount to Pay =" + amount);
+        calculateGST(10000);
     }
 }

@@ -1,8 +1,9 @@
-/*                              DisplayGST.java
-    Program No : 03
+/*                              GradeTheStudent.java
+    Program No : 13
     Date :
-    Program Title :
-    Program Description : Program to Input name and Marks in Physics, Chemistry and Biology.
+    Program Title : GradeTheStudent
+    Program Description : Program to Input Marks in Physics, Chemistry and Biology and name of Student.
+                          Give Grades accordingly.
     Note : below method is executed from public static void main(String[] args){..} method only
  */
 
@@ -14,14 +15,15 @@ public class GradeTheStudent {
 
      static int inputMarkFor(String subject) {
          Scanner input = new Scanner(System.in);
-         System.out.print("Enter Marks in " + subject + " :");
+         System.out.print("Enter Marks for " + subject + " :");
          int marks = input.nextInt();
+//         input.close();
          return marks;
     }
     static String decideGrades(int average) {
         String grade = "";
         if (average >= 80)
-            grade = "Student of the Year";
+            grade = "Exceptional";
         if(average >= 60 && average < 80)
             grade = "1st Division";
         if(average >= 45 && average < 60)
@@ -51,9 +53,9 @@ public class GradeTheStudent {
         System.out.println("Grade : " + grade);
     }
 
-//    public static void main(String[] args) {
-//        displayGrades();
-//    }
+    public static void main(String[] args) {
+        displayGrades();
+    }
 
 
 }
